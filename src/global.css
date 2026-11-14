@@ -1,0 +1,42 @@
+/* The only styles shared by every year. Keep this file tiny:
+   each term's own look belongs in its folder under src/terms. */
+
+body {
+  margin: 0;
+}
+
+/* Term switcher: deliberately neutral so it sits on top of any design. */
+.term-switcher {
+  position: fixed;
+  left: 18px;
+  bottom: 24px;
+  z-index: 900;
+  display: flex;
+  gap: 2px;
+  padding: 4px;
+  border-radius: 999px;
+  background: rgba(20, 20, 20, 0.82);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  font: 600 14px/1 system-ui, sans-serif;
+}
+
+.term-switcher a {
+  padding: 9px 14px;
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+}
+
+.term-switcher a:hover {
+  color: #fff;
+}
+
+.term-switcher a.active {
+  background: #fff;
+  color: #141414;
+}
+
+.term-switcher a:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}

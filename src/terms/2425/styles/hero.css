@@ -1,0 +1,165 @@
+/* Everything in this file is wrapped in the 24/25 term's class, so none of it
+   can affect another year's design. See terms/README.md. */
+:where(.term-2425) {
+  .hero {
+    position: relative;
+    min-height: min(82vh, 760px);
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    /* Shown until hero photos are supplied */
+    background:
+      radial-gradient(ellipse at 50% 35%, rgba(221, 161, 94, 0.28), transparent 60%),
+      linear-gradient(160deg, var(--green-dark) 20%, var(--green) 100%);
+  }
+
+  .hero__slides {
+    position: absolute;
+    inset: 0;
+  }
+
+  .hero__slides img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1.2s ease;
+  }
+
+  .hero__slides img.show {
+    opacity: 1;
+  }
+
+  /* Darkening layer so the title stays readable over any photograph:
+     an even wash, deepest behind the text in the middle. */
+  .hero__slides:not(:empty)::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35), transparent 70%),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.55));
+  }
+
+  .hero__content {
+    position: relative;
+    padding: 48px var(--gutter);
+    text-align: center;
+    color: var(--white);
+  }
+
+  .hero__title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(3.6rem, 2.2rem + 7vw, 6.5rem);
+    line-height: 0.95;
+    max-width: 12em;
+    margin: 0 auto 16px;
+    text-wrap: balance;
+    /* Solid cream fill for legibility; the warm highlight drifts across slowly. */
+    color: var(--cream);
+    background: linear-gradient(110deg, var(--cream) 40%, #ffd98a 50%, var(--cream) 60%) 100% / 250% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 3px 14px rgba(0, 0, 0, 0.55));
+    animation: shine 7s ease-in-out infinite;
+  }
+
+  .hero__motto {
+    font-size: clamp(1.3rem, 1rem + 1.2vw, 1.8rem);
+    letter-spacing: 0.6px;
+    margin-bottom: 26px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Call-to-action with two soft lights travelling along its border */
+  .star-border {
+    position: relative;
+    display: inline-block;
+    padding: 2px;
+    border-radius: 24px;
+    overflow: hidden;
+    isolation: isolate;
+    text-decoration: none;
+  }
+
+  .star-border::before,
+  .star-border::after {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    width: 300%;
+    height: 50%;
+    border-radius: 50%;
+    opacity: 0.7;
+    background: radial-gradient(circle, var(--amber), transparent 10%);
+  }
+
+  .star-border::before {
+    bottom: -12px;
+    right: -250%;
+    animation: star-move-bottom 6s linear infinite alternate;
+  }
+
+  .star-border::after {
+    top: -12px;
+    left: -250%;
+    animation: star-move-top 6s linear infinite alternate;
+  }
+
+  .star-border__inner {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 14px 28px;
+    border: 1px solid var(--green-dark);
+    border-radius: 22px;
+    background: var(--amber);
+    color: var(--ink-on-amber);
+    font-weight: 700;
+    transition:
+      background 0.22s,
+      color 0.22s;
+  }
+
+  .star-border:hover .star-border__inner {
+    background: var(--rust);
+    color: var(--white);
+  }
+}
+
+/* Animations cannot be nested, so they sit outside the wrapper. */
+@keyframes shine {
+  0%,
+  35% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+
+@keyframes star-move-bottom {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-100%, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes star-move-top {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(100%, 0);
+    opacity: 0;
+  }
+}

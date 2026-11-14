@@ -1,0 +1,35 @@
+/* Starting styles for the 25/26 site. Replace all of this with your own design.
+
+   The one rule to keep: every selector lives inside .term-2526, so nothing here
+   can change how 24/25 looks. Nesting does that for you: any rule written
+   inside the block below only applies within this year's wrapper. */
+
+.term-2526 {
+  /* Your design tokens (colours, fonts, spacing) go here as CSS variables. */
+  --background: #ffffff;
+  --text: #1a1a1a;
+
+  box-sizing: border-box;
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  text-align: center;
+  font-family: system-ui, sans-serif;
+  color: var(--text);
+  background: var(--background);
+}
+
+:where(.term-2526) {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: clamp(1.8rem, 1rem + 3vw, 3rem);
+    margin-bottom: 12px;
+  }
+}

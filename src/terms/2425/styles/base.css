@@ -1,0 +1,372 @@
+/* Reset, typography and the pieces shared by every section of the 24/25 site. */
+
+/* The <html> element sits outside the term wrapper, so these two rules
+   reach it with :has() and only apply while 24/25 is on screen. */
+html:has(.term-2425) {
+  /* Anchor links stop below the sticky header instead of underneath it. */
+  scroll-padding-top: 64px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html:has(.term-2425) {
+    scroll-behavior: smooth;
+  }
+}
+
+/* The wrapper plays the part <body> played in the original page. */
+.term-2425 {
+  box-sizing: border-box;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  padding-top: var(--header-height);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--text);
+  background: var(--cream);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Everything in this file is wrapped in the 24/25 term's class, so none of it
+   can affect another year's design. See terms/README.md. */
+:where(.term-2425) {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  main {
+    flex: 1;
+  }
+
+  img,
+  video {
+    display: block;
+    max-width: 100%;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  button {
+    font: inherit;
+    color: inherit;
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid var(--amber);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  /* ---------- Type hierarchy ---------- */
+
+  /* Section titles: Young Serif */
+  .title {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    font-size: clamp(2rem, 1.3rem + 2.6vw, 2.75rem);
+    line-height: 1.15;
+    color: var(--green-dark);
+    text-wrap: balance;
+  }
+
+  /* Sub-section titles: Sedan in olive */
+  .subtitle {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: clamp(1.5rem, 1.1rem + 1.4vw, 1.9rem);
+    line-height: 1.2;
+    color: var(--green);
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  /* Department / group labels */
+  .dept {
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 1.3rem;
+    letter-spacing: 0.3px;
+    line-height: 1.25;
+    color: var(--green-dark);
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .dept--left {
+    font-size: 1.5rem;
+    text-align: left;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--amber);
+    margin-bottom: 20px;
+  }
+
+  /* ---------- Layout ---------- */
+
+  .container {
+    width: 100%;
+    max-width: var(--page-width);
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+  }
+
+  .section {
+    padding-block: var(--section-space);
+  }
+
+  .section--tint {
+    background: var(--cream-deep);
+  }
+
+  .section-head {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto clamp(32px, 5vw, 52px);
+  }
+
+  /* Small amber rule under each section title */
+  .section-head .title::after {
+    content: '';
+    display: block;
+    width: 56px;
+    height: 3px;
+    margin: 16px auto 0;
+    border-radius: 2px;
+    background: var(--amber);
+  }
+
+  .section-head p {
+    margin-top: 14px;
+    opacity: 0.9;
+  }
+
+  /* Space between groups inside a section (EXCO, BOD, Seniors…) */
+  .term-group + .term-group,
+  .reveal + .term-group,
+  .term-group + .reveal {
+    margin-top: clamp(40px, 6vw, 64px);
+  }
+
+  /* ---------- Buttons ---------- */
+
+  .btn {
+    display: inline-block;
+    border: 2px solid transparent;
+    border-radius: var(--radius);
+    padding: 12px 22px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+    cursor: pointer;
+    background: var(--green);
+    color: var(--white);
+    transition:
+      transform 0.2s,
+      box-shadow 0.2s,
+      background 0.2s,
+      color 0.2s;
+  }
+
+  .btn:hover {
+    transform: translateY(-2px);
+    background: var(--green-dark);
+    box-shadow: 0 6px 18px rgba(96, 108, 56, 0.3);
+  }
+
+  .btn:active {
+    transform: none;
+  }
+
+  .btn--outline {
+    background: transparent;
+    color: var(--green-dark);
+    border-color: var(--green-dark);
+  }
+
+  .btn--outline:hover {
+    background: var(--green-dark);
+    color: var(--white);
+  }
+
+  /* ---------- Cards ---------- */
+
+  .card {
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    transition:
+      transform 0.22s,
+      box-shadow 0.22s;
+  }
+
+  .card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+  }
+
+  /* ---------- Reveal on scroll ---------- */
+  /* Visible by default; Reveal.tsx adds --pending only when it can animate. */
+
+  .reveal {
+    transition:
+      opacity 0.6s ease,
+      transform 0.6s ease;
+  }
+
+  .reveal--pending {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  /* ---------- Photo with placeholder ---------- */
+
+  .photo {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background: var(--sage);
+  }
+
+  .photo img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition:
+      opacity 0.4s,
+      filter 0.25s,
+      transform 0.25s;
+  }
+
+  .photo--loaded img {
+    opacity: 1;
+  }
+
+  .photo__placeholder {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    color: var(--green);
+    background:
+      radial-gradient(circle at 30% 20%, rgba(221, 161, 94, 0.22), transparent 55%),
+      linear-gradient(135deg, var(--sage), #d5dec0);
+  }
+
+  .photo__placeholder svg {
+    width: 34px;
+    height: 34px;
+    opacity: 0.55;
+  }
+
+  .photo__initials {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: var(--green);
+    opacity: 0.75;
+  }
+
+  /* ---------- Footer ---------- */
+
+  .site-footer {
+    padding: 22px 16px;
+    background: var(--green-dark);
+    color: var(--white);
+    text-align: center;
+    font-size: 0.98rem;
+  }
+
+  /* ---------- Back to top ---------- */
+
+  .back-to-top {
+    position: fixed;
+    right: 18px;
+    bottom: 24px;
+    z-index: 900;
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    border: none;
+    border-radius: 999px;
+    background: var(--green);
+    color: var(--white);
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
+    opacity: 0;
+    transform: translateY(10px) scale(0.9);
+    pointer-events: none;
+    transition:
+      opacity 0.2s,
+      transform 0.2s,
+      background 0.2s;
+  }
+
+  .back-to-top.is-visible {
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+  }
+
+  .back-to-top:hover {
+    background: var(--green-dark);
+  }
+
+  .back-to-top svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* ---------- Accessibility helpers ---------- */
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .skip-link {
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    z-index: 2000;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: var(--amber);
+    color: var(--ink-on-amber);
+    font-weight: 700;
+    text-decoration: none;
+    transform: translateY(-200%);
+  }
+
+  .skip-link:focus {
+    transform: none;
+  }
+
+  /* Visitors who ask for less motion get none of the decorative movement. */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation: none !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}

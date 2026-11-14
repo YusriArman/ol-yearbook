@@ -1,0 +1,33 @@
+/* Design tokens for the 24/25 term: Yuk Guan's palette and type, plus shared sizes.
+   They are set on the term's wrapper, so they only exist inside this year's site. */
+.term-2425 {
+  /* Palette */
+  --green: #606c38;
+  --green-dark: #283618;
+  --cream: #fefae0;
+  --amber: #dda15e;
+  --rust: #bc6c25;
+  --text: #2b2b2b;
+  --white: #fff;
+
+  /* Tints mixed from the palette */
+  --cream-deep: #f8f2cf; /* alternate section background */
+  --sage: #e6ecd8; /* advisor box, placeholders */
+  --ink-on-amber: #231a00;
+
+  /* Typography */
+  --font-display: 'Tangerine', cursive;
+  --font-heading: 'Young Serif', serif;
+  --font-body: 'Sedan', serif;
+
+  /* Shape and depth */
+  --radius: 12px;
+  --shadow-sm: 0 6px 16px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 10px 24px rgba(0, 0, 0, 0.14);
+
+  /* Layout */
+  --header-height: 64px;
+  --page-width: 1120px;
+  --gutter: 20px;
+  --section-space: clamp(56px, 8vw, 96px);
+}
