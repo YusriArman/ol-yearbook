@@ -84,13 +84,18 @@
     line-height: 1.4;
     background: linear-gradient(0deg, rgba(40, 54, 24, 0.95), rgba(40, 54, 24, 0.84));
     opacity: 0;
-    transition: opacity 0.25s ease;
+    /* While hidden, the overlay must not catch clicks meant for the card. */
+    visibility: hidden;
+    transition:
+      opacity 0.25s ease,
+      visibility 0.25s;
   }
 
   .fame-card:hover .fame-card__overlay,
   .fame-card:focus-visible .fame-card__overlay,
   .fame-card:focus-within .fame-card__overlay {
     opacity: 1;
+    visibility: visible;
   }
 
   .fame-card__achievement {

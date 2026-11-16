@@ -56,26 +56,41 @@
     gap: var(--gap);
   }
 
-  .member-grid--small {
-    --card-width: 200px;
-    --gap: 14px;
-  }
-
   /* BOD departments stack, each centred under its own label. */
   .dept-grid {
     display: grid;
     gap: 36px;
   }
 
-  .member-card {
-    position: relative;
-    /* Never wider than half the row, so phones show two cards side by side. */
+  /* Never wider than half the row, so phones show two cards side by side. */
+  .member-item {
     width: min(var(--card-width), calc(50% - var(--gap) / 2));
+  }
+
+  .member-item--small {
+    --card-width: 200px;
+  }
+
+  .member-card {
+    width: 100%;
+    height: 100%;
     padding: 20px 12px 18px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    border: none;
+    font: inherit;
+  }
+
+  button.member-card {
+    cursor: pointer;
+  }
+
+  /* A warm ring on the portrait hints that the card opens. */
+  button.member-card:hover .member-card__avatar,
+  button.member-card:focus-visible .member-card__avatar {
+    box-shadow: 0 0 0 3px var(--amber);
   }
 
   .member-card__avatar {
@@ -84,15 +99,15 @@
     border-radius: 50%;
     margin-bottom: 14px;
     box-shadow: 0 0 0 3px var(--green);
+    transition: box-shadow 0.2s;
   }
 
-  .member-card--small .member-card__avatar {
+  .member-item--small .member-card__avatar {
     width: min(120px, 74%);
     box-shadow: 0 0 0 2px var(--green);
   }
 
   .member-card__name {
-    font-family: var(--font-body);
     font-size: 1.05rem;
     font-weight: 700;
     line-height: 1.25;
@@ -107,25 +122,12 @@
     color: var(--green);
   }
 
-  /* The note fades in over the card on hover, keyboard focus or tap. */
-  .member-card__note {
-    position: absolute;
-    inset: 0;
-    display: grid;
-    place-items: center;
-    padding: 16px;
-    font-size: 0.98rem;
+  .term-hint {
+    margin: -24px auto 36px;
+    text-align: center;
     font-style: italic;
-    line-height: 1.4;
-    color: var(--white);
-    background: linear-gradient(0deg, rgba(40, 54, 24, 0.94), rgba(40, 54, 24, 0.82));
-    opacity: 0;
-    transition: opacity 0.25s ease;
-  }
-
-  .member-card:hover .member-card__note,
-  .member-card:focus-visible .member-card__note {
-    opacity: 1;
+    font-size: 0.98rem;
+    color: var(--green);
   }
 
   @media (max-width: 480px) {
@@ -140,10 +142,61 @@
     .member-card__name {
       font-size: 0.98rem;
     }
+  }
 
-    .member-card__note {
-      padding: 10px;
-      font-size: 0.88rem;
-    }
+  /* ---------- Member message pop-up ---------- */
+
+  .member-dialog {
+    width: min(92vw, 460px);
+    margin: auto;
+    padding: 0;
+    border: none;
+    border-radius: 18px;
+    border-top: 6px solid var(--amber);
+    background: var(--cream);
+    color: var(--text);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+  }
+
+  .member-dialog::backdrop {
+    background: rgba(24, 32, 14, 0.7);
+  }
+
+  .member-dialog__body {
+    padding: 32px 28px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .member-dialog__avatar {
+    width: 132px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin-bottom: 16px;
+    box-shadow: 0 0 0 3px var(--green);
+  }
+
+  .member-dialog h3 {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    font-size: 1.45rem;
+    line-height: 1.2;
+    color: var(--green-dark);
+  }
+
+  .member-dialog__role {
+    margin-top: 2px;
+    color: var(--green);
+  }
+
+  .member-dialog blockquote {
+    margin: 18px 0 24px;
+    font-size: 1.08rem;
+    line-height: 1.6;
+    /* Keeps the line breaks people typed in their message. */
+    white-space: pre-line;
+    text-wrap: pretty;
   }
 }

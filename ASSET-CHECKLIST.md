@@ -1,142 +1,266 @@
 # Asset checklist (24/25)
 
-Every file the site looks for, taken from Yuk Guan's 27th draft. Drop each file into `public/` at the path shown;
-until then the site shows a placeholder in its place. Run `npm run assets` to see what is still missing.
+Every image the 24/25 site uses, as named in Yuk Guan's deployed site. Files live in `public/` at the path shown.
+Ticked files are in place; unticked ones were not in the original site's download and show a placeholder.
 
-## (site root)
+## gallery
 
-- [ ] `public/tol_2024_apprentices_recap.mp4` — TOL 2025 Apprentices Recap Video (video)
-- [ ] `public/tol_2425_recap.mp4` — TOL 24/25 Recap Video (video)
+- [x] `public/gallery/aleesya.jpg` — Memory from Aleesya Izzhana
+- [x] `public/gallery/alyssa.jpg` — Memory from Alyssa
+- [x] `public/gallery/anandleen.jpg` — Memory from Anandleen
+- [x] `public/gallery/angelova.jpg` — Memory from Angelova Sidney
+- [x] `public/gallery/aryan.jpg` — Memory from Aryan Kashyap
+- [x] `public/gallery/bob.jpg` — Memory from bob
+- [x] `public/gallery/charista1.jpg` — Memory from Charista Elliani Andriana
+- [x] `public/gallery/charista2.jpg` — Memory from Charista Elliani Andriana
+- [x] `public/gallery/charista3.jpg` — Memory from Charista Elliani Andriana
+- [x] `public/gallery/chin1.jpg` — Memory from Chin Yun Xien
+- [x] `public/gallery/chin2.jpg` — Memory from Chin Yun Xien
+- [x] `public/gallery/chin3.jpg` — Memory from Chin Yun Xien
+- [x] `public/gallery/chin4.jpg` — Memory from Chin Yun Xien
+- [x] `public/gallery/cyndi.jpg` — Memory from Cyndi Lee
+- [x] `public/gallery/dena.jpg` — Memory from Choong Zi En (Dena)
+- [x] `public/gallery/elle.jpg` — Memory from Siew Zhi Yin (Ellee)
+- [x] `public/gallery/enyu1.jpg` — Memory from Lim En Yu
+- [x] `public/gallery/enyu2.jpg` — Memory from Lim En Yu
+- [x] `public/gallery/evelynoctaria.jpg` — Memory from Evelyn Octaria Witanto
+- [x] `public/gallery/evelynwong1.jpg` — Memory from Evelyn Wong
+- [x] `public/gallery/evelynwong2.jpg` — Memory from Evelyn Wong
+- [x] `public/gallery/felice1.jpg` — Memory from Felice
+- [x] `public/gallery/felice2.jpg` — Memory from Felice
+- [x] `public/gallery/felice3.jpg` — Memory from Felice
+- [x] `public/gallery/felice4.jpg` — Memory from Felice
+- [x] `public/gallery/felice5.jpg` — Memory from Felice
+- [x] `public/gallery/haiyun1.jpg` — Memory from Hing Hai Yun
+- [x] `public/gallery/haiyun2.jpg` — Memory from Hing Hai Yun
+- [x] `public/gallery/haiyun3.jpg` — Memory from Hing Hai Yun
+- [x] `public/gallery/haiyun4.jpg` — Memory from Hing Hai Yun
+- [x] `public/gallery/haiyun5.jpg` — Memory from Hing Hai Yun
+- [x] `public/gallery/hong1.jpg` — Memory from Hong Min Thong
+- [x] `public/gallery/hong2.jpg` — Memory from Hong Min Thong
+- [x] `public/gallery/hong3.jpg` — Memory from Hong Min Thong
+- [x] `public/gallery/hong4.jpg` — Memory from Hong Min Thong
+- [x] `public/gallery/hong5.jpg` — Memory from Hong Min Thong
+- [x] `public/gallery/hong6.jpg` — Memory from Hong Min Thong
+- [x] `public/gallery/iris1.jpg` — Memory from Iris Kwai
+- [x] `public/gallery/iris2.jpg` — Memory from Iris Kwai
+- [x] `public/gallery/iris3.jpg` — Memory from Iris Kwai
+- [x] `public/gallery/iris4.jpg` — Memory from Iris Kwai
+- [x] `public/gallery/jacqueline.jpg` — Memory from Jacqueline Lo Jia En
+- [x] `public/gallery/jesselyn1.jpg` — Memory from Jesselyn Liew Yi Zhen
+- [x] `public/gallery/jesselyn2.jpg` — Memory from Jesselyn Liew Yi Zhen
+- [x] `public/gallery/jesselyn3.jpg` — Memory from Jesselyn Liew Yi Zhen
+- [x] `public/gallery/jesselyn4.jpg` — Memory from Jesselyn Liew Yi Zhen
+- [x] `public/gallery/jesselyn5.jpg` — Memory from Jesselyn Liew Yi Zhen
+- [x] `public/gallery/jesselyn6.jpg` — Memory from Jesselyn Liew Yi Zhen
+- [x] `public/gallery/jesselyn7.jpg` — Memory from Jesselyn Liew Yi Zhen
+- [x] `public/gallery/jesselyn8.jpg` — Memory from Jesselyn Liew Yi Zhen
+- [x] `public/gallery/jiahui1.jpg` — Memory from Leong Jiahui
+- [x] `public/gallery/jiahui2.jpg` — Memory from Leong Jiahui
+- [x] `public/gallery/jiahui3.jpg` — Memory from Leong Jiahui
+- [x] `public/gallery/jiahui4.jpg` — Memory from Leong Jiahui
+- [x] `public/gallery/jiahui5.jpg` — Memory from Leong Jiahui
+- [x] `public/gallery/jiayi.jpg` — Memory from Jia Yi
+- [x] `public/gallery/joel1.jpg` — Memory from Joel John Tan Juner
+- [x] `public/gallery/joel10.jpg` — Memory from Joel John Tan Juner
+- [x] `public/gallery/joel2.jpg` — Memory from Joel John Tan Juner
+- [x] `public/gallery/joel3.jpg` — Memory from Joel John Tan Juner
+- [x] `public/gallery/joel4.jpg` — Memory from Joel John Tan Juner
+- [x] `public/gallery/joel5.jpg` — Memory from Joel John Tan Juner
+- [x] `public/gallery/joel6.jpg` — Memory from Joel John Tan Juner
+- [x] `public/gallery/joel7.jpg` — Memory from Joel John Tan Juner
+- [x] `public/gallery/joel8.jpg` — Memory from Joel John Tan Juner
+- [x] `public/gallery/joel9.jpg` — Memory from Joel John Tan Juner
+- [x] `public/gallery/joshua.jpg` — Memory from Joshua Sam
+- [x] `public/gallery/joshua2.jpg` — Memory from Joshua Sam
+- [x] `public/gallery/joshua3.jpg` — Memory from Joshua Sam
+- [x] `public/gallery/karmila.jpg` — Memory from Karmila
+- [x] `public/gallery/khor.jpg` — Memory from Khor Vi Ken
+- [x] `public/gallery/kong.jpg` — Memory from Kong Cai Yi
+- [x] `public/gallery/lee1.jpg` — Memory from Lee Yi Jing
+- [x] `public/gallery/lee2.jpg` — Memory from Lee Yi Jing
+- [x] `public/gallery/parveen.jpg` — Memory from Parveen Raaj
+- [x] `public/gallery/phoon1.jpg` — Memory from Phoon Yuk Guan
+- [x] `public/gallery/phoon10-1.jpg` — Memory from Phoon Yuk Guan
+- [x] `public/gallery/phoon10-2.jpg` — Memory from Phoon Yuk Guan
+- [x] `public/gallery/phoon2.jpg` — Memory from Phoon Yuk Guan
+- [x] `public/gallery/phoon3.jpg` — Memory from Phoon Yuk Guan
+- [x] `public/gallery/phoon4.jpg` — Memory from Phoon Yuk Guan
+- [x] `public/gallery/phoon5.jpg` — Memory from Phoon Yuk Guan
+- [x] `public/gallery/phoon6.jpg` — Memory from Phoon Yuk Guan
+- [x] `public/gallery/phoon7.jpg` — Memory from Phoon Yuk Guan
+- [x] `public/gallery/phoon8.jpg` — Memory from Phoon Yuk Guan
+- [x] `public/gallery/phoon9.jpg` — Memory from Phoon Yuk Guan
+- [x] `public/gallery/qiaole1.jpg` — Memory from Chern Qiao Le
+- [x] `public/gallery/qiaole2.jpg` — Memory from Chern Qiao Le
+- [x] `public/gallery/qiaole3.jpg` — Memory from Chern Qiao Le
+- [x] `public/gallery/qiaole4.jpg` — Memory from Chern Qiao Le
+- [x] `public/gallery/qiaole5.jpg` — Memory from Chern Qiao Le
+- [x] `public/gallery/reo1.jpg` — Memory from Tan Ming Reo
+- [x] `public/gallery/reo2.jpg` — Memory from Tan Ming Reo
+- [x] `public/gallery/reo3.jpg` — Memory from Tan Ming Reo
+- [x] `public/gallery/rianna.jpg` — Memory from Rianna
+- [x] `public/gallery/sabid1.jpg` — Memory from Md. Rumaiut Islam (Sabid)
+- [x] `public/gallery/sabid2.jpg` — Memory from Md. Rumaiut Islam (Sabid)
+- [x] `public/gallery/sabid3.jpg` — Memory from Md. Rumaiut Islam (Sabid)
+- [x] `public/gallery/sabid4.jpg` — Memory from Md. Rumaiut Islam (Sabid)
+- [x] `public/gallery/thomas1.jpg` — Memory from Thomas Mok
+- [x] `public/gallery/thomas2.jpg` — Memory from Thomas Mok
+- [x] `public/gallery/thomas3.jpg` — Memory from Thomas Mok
+- [x] `public/gallery/thomas4.jpg` — Memory from Thomas Mok
+- [x] `public/gallery/thomas5.jpg` — Memory from Thomas Mok
+- [x] `public/gallery/thomas6.jpg` — Memory from Thomas Mok
+- [x] `public/gallery/thomas7.jpg` — Memory from Thomas Mok
+- [x] `public/gallery/thomas8.jpg` — Memory from Thomas Mok
+- [x] `public/gallery/weiqi1.jpg` — Memory from Lai Wei Qi
+- [x] `public/gallery/weiqi3.jpg` — Memory from Lai Wei Qi
+- [x] `public/gallery/weiqi5.jpg` — Memory from Lai Wei Qi
+- [x] `public/gallery/wenwei.jpg` — Memory from Chou Wen Wei
+- [x] `public/gallery/wong.jpg` — Memory from Wong Ki Hurn
+- [x] `public/gallery/xiaoming1.jpg` — Memory from Khoo Xiao Ming
+- [x] `public/gallery/xiaoming2.jpg` — Memory from Khoo Xiao Ming
+- [x] `public/gallery/xinyi.jpg` — Memory from Chee Xin Yi
+- [x] `public/gallery/xinyu1.jpg` — Memory from Eng Xin Yu
+- [x] `public/gallery/xinyu2.jpg` — Memory from Eng Xin Yu
+- [x] `public/gallery/yenee.jpg` — Memory from Kong Yen Ee
+- [x] `public/gallery/zanna.jpg` — Memory from Ho Zan Na
+- [x] `public/gallery/zara1.jpg` — Memory from Zara
+- [x] `public/gallery/zara2.jpg` — Memory from Zara
+- [x] `public/gallery/zara3.jpg` — Memory from Zara
+- [x] `public/gallery/zhixuan1.jpg` — Memory from Young Zhi Xuan
+- [x] `public/gallery/zhixuan2.jpg` — Memory from Young Zhi Xuan
+- [x] `public/gallery/zoey.jpg` — Memory from Liew Zi Yi (Zoey)
 
 ## images
 
-- [ ] `public/images/hero.jpg` — Hero slideshow
-- [ ] `public/images/hero1.jpg` — Hero slideshow
-- [ ] `public/images/hero2.jpg` — Hero slideshow
-- [ ] `public/images/hero3.jpg` — Hero slideshow
-- [ ] `public/images/hero4.jpg` — Hero slideshow
-- [ ] `public/images/hero5.jpg` — Hero slideshow
+- [x] `public/images/hero.jpg` — Hero slideshow
+- [x] `public/images/hero1.jpg` — Hero slideshow
+- [x] `public/images/hero2.jpg` — Hero slideshow
+- [x] `public/images/hero3.jpg` — Hero slideshow
+- [x] `public/images/hero4.jpg` — Hero slideshow
+- [x] `public/images/hero5.jpg` — Hero slideshow
+- [x] `public/images/msvithyia.jpg` — Ms Vithyia (advisor)
 
 ## images/events
 
-- [ ] `public/images/events/academic-briefing.jpg` — Academic Briefing
-- [ ] `public/images/events/cs-festival.jpg` — Clubs & Societies Day / CNS Fest
-- [ ] `public/images/events/engagement-day.jpg` — Engagement Day
-- [ ] `public/images/events/freshie-games.jpg` — Freshie Games
-- [ ] `public/images/events/orientation-party.jpg` — Orientation Party
-- [ ] `public/images/events/workshops.jpg` — Workshops
+- [x] `public/images/events/academic-briefing.jpg` — Academic Briefing
+- [x] `public/images/events/cs-festival.jpg` — Clubs & Societies Day / CNS Fest
+- [x] `public/images/events/engagement-day.jpg` — Engagement Day
+- [x] `public/images/events/freshie-games.jpg` — Freshie Games
+- [x] `public/images/events/orientation-party.jpg` — Orientation Party
+- [x] `public/images/events/workshops.jpg` — Workshops
 
 ## images/fame
 
-- [ ] `public/images/fame/bookofol.jpg` — Book Of OL
-- [ ] `public/images/fame/celestialdesign.jpg` — Designer of OP 2024 (Celestial)
-- [ ] `public/images/fame/celestialticketingsystem.jpg` — Web Developer for OP 2024 Ticketing
+- [x] `public/images/fame/bookofol.jpg` — Book Of OL
+- [x] `public/images/fame/capturetheduck.jpg` — Creator of Capture the Duck
+- [x] `public/images/fame/celestialdesign.jpg` — Designer of OP 2024 (Celestial)
+- [x] `public/images/fame/celestialticketingsystem.jpg` — Web Developer for OP 2024 Ticketing
+- [x] `public/images/fame/cnscardholder.jpg` — Designer of CNS SEPT 2025 Card Holder
+- [x] `public/images/fame/duck.jpg` — Creator of Head, Shoulders, Knees & Ducks of Freshie Games September 2023
+- [x] `public/images/fame/eclipse.jpg` — Designer of OP 2025 (Eclipse)
+- [x] `public/images/fame/edfloorplan.jpg` — Creator of Engagement Day Circle Floor Plan
+- [x] `public/images/fame/enchanta.jpg` — Designer of Social Night AUG 2025 (Enchanta)
 - [ ] `public/images/fame/excobod-2223.jpg` — EXCOBOD Term 22/23
 - [ ] `public/images/fame/excobod-2324.jpg` — EXCOBOD Term 23/24
 - [ ] `public/images/fame/excobod-2425.jpg` — EXCOBOD Term 24/25
-- [ ] `public/images/fame/pmapm-generic.jpg` — Shared image for achievements without their own photo
-- [ ] `public/images/fame/tolelection2024.jpg` — First Initiator of TOL Election Day
-
-## images/gallery
-
-- [ ] `public/images/gallery/apprentices-2024-poster.jpg` — TOL 2025 Apprentices Recap Video (poster)
-- [ ] `public/images/gallery/internal-1.jpg` — Internal Event 1
-- [ ] `public/images/gallery/internal-2.jpg` — Internal Event 2
-- [ ] `public/images/gallery/internal-3.jpg` — Internal Event 3
-- [ ] `public/images/gallery/internal-4.jpg` — Internal Event 4
-- [ ] `public/images/gallery/internal-5.jpg` — Internal Event 5
-- [ ] `public/images/gallery/tol-2425-poster.jpg` — TOL 24/25 Recap Video (poster)
+- [x] `public/images/fame/oljacket.jpg` — Designer of OL Varsity Jacket
+- [x] `public/images/fame/olmug.jpg` — The OL Met Gala Appreciation Dinner Mug Designer
+- [x] `public/images/fame/pmapm-generic.jpg` — Designer of CNS Fest 2025 T-Shirt
+- [x] `public/images/fame/poloshirt24:25.jpg` — Designer of TOL Polo Shirt 24/25
+- [x] `public/images/fame/tbc2025.jpg` — Designer of TBC Shirt 2025
+- [x] `public/images/fame/tolelection2024.jpg` — First Initiator of TOL Election Day
+- [x] `public/images/fame/yearbook.jpg` — TOL 24/25 Yearbook Website
 
 ## images/members
 
-- [ ] `public/images/members/abirah-yasmin.jpg` — Abirah Yasmin
-- [ ] `public/images/members/aleesya-izzhana.jpg` — Aleesya Izzhana Binti Syaiful Izdihar
-- [ ] `public/images/members/ameer-shahril.jpg` — Ameer Shahril
-- [ ] `public/images/members/anandleen-kaur.jpg` — Anandleen Kaur
-- [ ] `public/images/members/angel-tan.jpg` — Angel Tan
-- [ ] `public/images/members/angelova-sidney-tanzil.jpg` — Angelova Sidney Tanzil
-- [ ] `public/images/members/aryan-kashyap.jpg` — Aryan Kashyap
-- [ ] `public/images/members/bryan-cheng-yi-khai.jpg` — Bryan Cheng Yi Khai
-- [ ] `public/images/members/chan-cheok-hua.jpg` — Chan Cheok Hua
-- [ ] `public/images/members/charista-elliani.jpg` — Charista Elliani
-- [ ] `public/images/members/chee-xin-yi.jpg` — Chee Xin Yi
-- [ ] `public/images/members/chern-qiao-le.jpg` — Chern Qiao Le
-- [ ] `public/images/members/chia-xin-xuan.jpg` — Chia Xin Xuan
-- [ ] `public/images/members/chin-li-yuan.jpg` — Chin Li Yuan
-- [ ] `public/images/members/chin-yun-xien.jpg` — Chin Yun Xien
-- [ ] `public/images/members/chong-man-san.jpg` — Chong Man San
-- [ ] `public/images/members/choong-zi-en-dena.jpg` — Choong Zi En (Dena)
-- [ ] `public/images/members/chou-wen-wei.jpg` — Chou Wen Wei
-- [ ] `public/images/members/cindy-chuah-chin-li.jpg` — Cindy Chuah Chin Li
-- [ ] `public/images/members/cindy-cornelia.jpg` — Cindy Cornelia
-- [ ] `public/images/members/elisha-paulraj.jpg` — Elisha Paulraj
-- [ ] `public/images/members/elvina-laurencia-ryanto.jpg` — Elvina Laurencia Ryanto
-- [ ] `public/images/members/eng-xin-yu.jpg` — Eng Xin Yu
-- [ ] `public/images/members/eugenie-ngu.jpg` — Eugenie Ngu
-- [ ] `public/images/members/evelyn-octaria-witanto.jpg` — Evelyn Octaria Witanto
-- [ ] `public/images/members/felice.jpg` — Felice
-- [ ] `public/images/members/gabrielle-yap-ning-xuan.jpg` — Gabrielle Yap Ning Xuan
-- [ ] `public/images/members/goh-wayen.jpg` — Goh Wayen
-- [ ] `public/images/members/hing-hai-yun.jpg` — Hing Hai Yun
-- [ ] `public/images/members/ho-jia-rou.jpg` — Ho Jia Rou
-- [ ] `public/images/members/ho-zan-na.jpg` — Ho zan na
-- [ ] `public/images/members/hong-min-thong.jpg` — Hong Min Thong
-- [ ] `public/images/members/hue-wan-teng.jpg` — Hue Wan Teng
-- [ ] `public/images/members/iris-kwai-kit-ying.jpg` — Iris Kwai Kit Ying
-- [ ] `public/images/members/ivan-joshua-george.jpg` — Ivan Joshua George
-- [ ] `public/images/members/jacqueline-lo-jia-en.jpg` — Jacqueline Lo Jia En
-- [ ] `public/images/members/jeremy-kan.jpg` — Jeremy Kan
-- [ ] `public/images/members/jesselyn-liew-yi-zhen.jpg` — Jesselyn Liew Yi Zhen
-- [ ] `public/images/members/joanne-phang-zi-xuan.jpg` — Joanne Phang Zi Xuan
-- [ ] `public/images/members/joel-john-tan-juner.jpg` — Joel John Tan Juner
-- [ ] `public/images/members/joshua-sam.jpg` — Joshua Sam
-- [ ] `public/images/members/keh-zyi-yenn.jpg` — Keh Zyi Yenn
-- [ ] `public/images/members/khoo-jia-yi.jpg` — Khoo Jia Yi
-- [ ] `public/images/members/khoo-xiao-ming.jpg` — Khoo Xiao Ming
-- [ ] `public/images/members/khor-vi-ken.jpg` — Khor Vi Ken
-- [ ] `public/images/members/kong-cai-yi.jpg` — Kong Cai Yi
-- [ ] `public/images/members/kong-yen-ee.jpg` — Kong Yen Ee
-- [ ] `public/images/members/lai-pei-xi.jpg` — Lai Pei Xi
-- [ ] `public/images/members/lai-wei-qi.jpg` — Lai Wei Qi
-- [ ] `public/images/members/lai-weng-kit.jpg` — Lai Weng Kit
-- [ ] `public/images/members/lee-sam-yee-cyndi.jpg` — Lee Sam Yee Cyndi
-- [ ] `public/images/members/lee-yi-jing-roy.jpg` — Lee Yi Jing (Roy)
-- [ ] `public/images/members/lee-zoe.jpg` — Lee Zoe
-- [ ] `public/images/members/leong-jiahui.jpg` — Leong Jiahui
-- [ ] `public/images/members/liew-zi-yi.jpg` — Liew Zi Yi
-- [ ] `public/images/members/lim-en-yu.jpg` — Lim En Yu
-- [ ] `public/images/members/lim-yan-jun.jpg` — Lim Yan Jun (Lucas)
-- [ ] `public/images/members/loh-jynshwen.jpg` — Loh Jynshwen
-- [ ] `public/images/members/loh-yong-shuen.jpg` — Loh Yong Shuen
-- [ ] `public/images/members/lorraine-lim.jpg` — Lorraine Lim
-- [ ] `public/images/members/md-rumaiut-islam-sabid.jpg` — Md Rumaiut Islam (Sabid)
-- [ ] `public/images/members/mok-tien-yuen.jpg` — Mok Tien Yuen (Thomas)
-- [ ] `public/images/members/ms-vithyia.jpg` — Ms Vithyia (advisor)
-- [ ] `public/images/members/ng-poh-yen.jpg` — Ng Poh Yen
-- [ ] `public/images/members/nur-alyssa.jpg` — Nur Alyssa
-- [ ] `public/images/members/nurin-karmila-binti-hismawadi.jpg` — Nurin Karmila Binti Hismawadi
-- [ ] `public/images/members/nurul-natasya.jpg` — Nurul Natasya Binti Ramli
-- [ ] `public/images/members/pang-peying.jpg` — Pang Peying
-- [ ] `public/images/members/parveen-raaj.jpg` — Parveen Raaj
-- [ ] `public/images/members/pelicia-tang-ying-jing.jpg` — Pelicia Tang Ying Jing
-- [ ] `public/images/members/phoon-yuk-guan.jpg` — Phoon Yuk Guan
-- [ ] `public/images/members/poh-zi-qian.jpg` — Poh Zi Qian
-- [ ] `public/images/members/rafidah-tan-xue-rou.jpg` — Rafidah Tan Xue Rou
-- [ ] `public/images/members/rianna-tseu-kar-yin.jpg` — Rianna Tseu Kar Yin
-- [ ] `public/images/members/shaohanna-joy-khoo.jpg` — Shaohanna Joy Khoo
-- [ ] `public/images/members/siew-zhi-yin.jpg` — Siew Zhi Yin
-- [ ] `public/images/members/sri-vaishnevi.jpg` — Sri Vaishnevi
-- [ ] `public/images/members/syarifah-syazahanaa.jpg` — Syarifah Syaza
-- [ ] `public/images/members/tan-ming-reo.jpg` — Tan Ming Reo
-- [ ] `public/images/members/teh-su-wei.jpg` — Teh Su Wei
-- [ ] `public/images/members/vivienne-siew-ruo-qing.jpg` — Vivienne Siew-Ruo Qing
-- [ ] `public/images/members/wan-hanim-syauqina.jpg` — Wan Hanim Syauqina
-- [ ] `public/images/members/wong-hui-jia.jpg` — Wong Hui Jia
-- [ ] `public/images/members/wong-khye-qing.jpg` — Wong Khye Qing
-- [ ] `public/images/members/wong-ki-hurn.jpg` — Wong Ki Hurn
-- [ ] `public/images/members/wong-wan-qing.jpg` — Wong Wan Qing
-- [ ] `public/images/members/wong-yi-ming-victor.jpg` — Wong Yi Ming Victor
-- [ ] `public/images/members/yong-tung-joe.jpg` — Yong Tung Joe
-- [ ] `public/images/members/young-zhi-xuan.jpg` — Young Zhi xuan
-- [ ] `public/images/members/yusri-tan.jpg` — Yusri Tan
-- [ ] `public/images/members/zara-afrin-ali.jpg` — Zara Afrin Ali
+- [x] `public/images/members/abirah-yasmin.jpg` — Abirah Yasmin
+- [x] `public/images/members/aleesya-izzhana.jpg` — Aleesya Izzhana Binti Syaiful Izdihar
+- [x] `public/images/members/ameer-shahril.jpg` — Ameer Shahril
+- [x] `public/images/members/anandleen-kaur.jpg` — Anandleen Kaur
+- [x] `public/images/members/angel-tan.jpg` — Angel Tan
+- [x] `public/images/members/angelova-sidney-tanzil.jpg` — Angelova Sidney Tanzil
+- [x] `public/images/members/aryan-kashyap.jpg` — Aryan Kashyap
+- [x] `public/images/members/bryan-cheng-yi-khai.jpg` — Bryan Cheng Yi Khai
+- [x] `public/images/members/chan-cheok-hua.jpg` — Chan Cheok Hua
+- [x] `public/images/members/charista-elliani.jpg` — Charista Elliani
+- [x] `public/images/members/chee-xin-yi.jpg` — Chee Xin Yi
+- [x] `public/images/members/chern-qiao-le.jpg` — Chern Qiao Le
+- [x] `public/images/members/chia-xin-xuan.jpg` — Chia Xin Xuan
+- [x] `public/images/members/chin-li-yuan.jpg` — Chin Li Yuan
+- [x] `public/images/members/chin-yun-xien.jpg` — Chin Yun Xien
+- [x] `public/images/members/chong-man-san.jpg` — Chong Man San
+- [x] `public/images/members/choong-zi-en-dena.jpg` — Choong Zi En (Dena)
+- [x] `public/images/members/chou-wen-wei.jpg` — Chou Wen Wei
+- [x] `public/images/members/cindy-chuah-chin-li.jpg` — Cindy Chuah Chin Li
+- [x] `public/images/members/cindy-cornelia.jpg` — Cindy Cornelia
+- [x] `public/images/members/elisha-paulraj.jpg` — Elisha Paulraj
+- [x] `public/images/members/elvina-laurencia-ryanto.jpg` — Elvina Laurencia Ryanto
+- [x] `public/images/members/eng-xin-yu.jpg` — Eng Xin Yu
+- [x] `public/images/members/eugenie-ngu.jpg` — Eugenie Ngu
+- [x] `public/images/members/evelyn-octaria-witanto.jpg` — Evelyn Octaria Witanto
+- [x] `public/images/members/felice.jpg` — Felice
+- [x] `public/images/members/gabrielle-yap-ning-xuan.jpg` — Gabrielle Yap Ning Xuan
+- [x] `public/images/members/goh-wayen.jpg` — Goh Wayen
+- [x] `public/images/members/hing-hai-yun.jpg` — Hing Hai Yun
+- [x] `public/images/members/ho-jia-rou.jpg` — Ho Jia Rou
+- [x] `public/images/members/ho-zan-na.jpg` — Ho zan na
+- [x] `public/images/members/hong-min-thong.jpg` — Hong Min Thong
+- [x] `public/images/members/hue-wan-teng.jpg` — Hue Wan Teng
+- [x] `public/images/members/iris-kwai-kit-ying.jpg` — Iris Kwai Kit Ying
+- [x] `public/images/members/ivan-joshua-george.jpg` — Ivan Joshua George
+- [x] `public/images/members/jacqueline-lo-jia-en.jpg` — Jacqueline Lo Jia En
+- [x] `public/images/members/jeremy-kan.jpg` — Jeremy Kan
+- [x] `public/images/members/jesselyn-liew-yi-zhen.jpg` — Jesselyn Liew Yi Zhen
+- [x] `public/images/members/joanne-phang-zi-xuan.jpg` — Joanne Phang Zi Xuan
+- [x] `public/images/members/joel-john-tan-juner.jpg` — Joel John Tan Juner
+- [x] `public/images/members/joshua-sam.jpg` — Joshua Sam
+- [x] `public/images/members/keh-zyi-yenn.jpg` — Keh Zyi Yenn
+- [x] `public/images/members/khoo-jia-yi.jpg` — Khoo Jia Yi
+- [x] `public/images/members/khoo-xiao-ming.jpg` — Khoo Xiao Ming
+- [x] `public/images/members/khor-vi-ken.jpg` — Khor Vi Ken
+- [x] `public/images/members/kong-cai-yi.jpg` — Kong Cai Yi
+- [x] `public/images/members/kong-yen-ee.jpg` — Kong Yen Ee
+- [x] `public/images/members/lai-pei-xi.jpg` — Lai Pei Xi
+- [x] `public/images/members/lai-wei-qi.jpg` — Lai Wei Qi
+- [x] `public/images/members/lai-weng-kit.jpg` — Lai Weng Kit
+- [x] `public/images/members/lee-sam-yee-cyndi.jpg` — Lee Sam Yee Cyndi
+- [x] `public/images/members/lee-yi-jing-roy.jpg` — Lee Yi Jing (Roy)
+- [x] `public/images/members/lee-zoe.jpg` — Lee Zoe
+- [x] `public/images/members/leong-jiahui.jpg` — Leong Jiahui
+- [x] `public/images/members/liew-zi-yi.jpg` — Liew Zi Yi
+- [x] `public/images/members/lim-en-yu.jpg` — Lim En Yu
+- [x] `public/images/members/lim-yan-jun.jpg` — Lim Yan Jun (Lucas)
+- [x] `public/images/members/loh-jynshwen.jpg` — Loh Jynshwen
+- [x] `public/images/members/loh-yong-shuen.jpg` — Loh Yong Shuen
+- [x] `public/images/members/lorraine-lim.jpg` — Lorraine Lim
+- [x] `public/images/members/md-rumaiut-islam-sabid.jpg` — Md Rumaiut Islam (Sabid)
+- [x] `public/images/members/mok-tien-yuen.jpg` — Mok Tien Yuen
+- [x] `public/images/members/ng-poh-yen.jpg` — Ng Poh Yen
+- [x] `public/images/members/nur-alyssa.jpg` — Nur Alyssa
+- [x] `public/images/members/nurin-karmila-binti-hismawadi.jpg` — Nurin Karmila Binti Hismawadi
+- [x] `public/images/members/nurul-natasya.jpg` — Nurul Natasya
+- [x] `public/images/members/pang-peying.jpg` — Pang Peying
+- [x] `public/images/members/parveen-raaj.jpg` — Parveen Raaj
+- [x] `public/images/members/pelicia-tang-ying-jing.jpg` — Pelicia Tang Ying Jing
+- [x] `public/images/members/phoon-yuk-guan.jpg` — Phoon Yuk Guan
+- [x] `public/images/members/poh-zi-qian.jpg` — Poh Zi Qian
+- [x] `public/images/members/rafidah-tan-xue-rou.jpg` — Rafidah Tan Xue Rou
+- [x] `public/images/members/rianna-tseu-kar-yin.jpg` — Rianna Tseu Kar Yin
+- [x] `public/images/members/shaohanna-joy-khoo.jpg` — Shaohanna Joy Khoo
+- [x] `public/images/members/siew-zhi-yin.jpg` — Siew Zhi Yin
+- [x] `public/images/members/sri-vaishnevi.jpg` — Sri Vaishnevi
+- [x] `public/images/members/syarifah-syazahanaa.jpg` — Syarifah Syaza
+- [x] `public/images/members/tan-ming-reo.jpg` — Tan Ming Reo
+- [x] `public/images/members/teh-su-wei.jpg` — Teh Su Wei
+- [x] `public/images/members/vivienne-siew-ruo-qing.jpg` — Vivienne Siew-Ruo Qing
+- [x] `public/images/members/wan-hanim-syauqina.jpg` — Wan Hanim Syauqina
+- [x] `public/images/members/wong-hui-jia.jpg` — Wong Hui Jia
+- [x] `public/images/members/wong-khye-qing.jpg` — Wong Khye Qing
+- [x] `public/images/members/wong-ki-hurn.jpg` — Wong Ki Hurn
+- [x] `public/images/members/wong-wan-qing.jpg` — Wong Wan Qing
+- [x] `public/images/members/wong-yi-ming-victor.jpg` — Wong Yi Ming Victor
+- [x] `public/images/members/yong-tung-joe.jpg` — Yong Tung Joe
+- [x] `public/images/members/young-zhi-xuan.jpg` — Young Zhi xuan
+- [x] `public/images/members/yusri-tan.jpg` — Yusri Tan
+- [x] `public/images/members/zara-afrin-ali.jpg` — Zara Afrin Ali

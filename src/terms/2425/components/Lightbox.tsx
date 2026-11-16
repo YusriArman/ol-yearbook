@@ -1,10 +1,19 @@
 import { useEffect, useRef } from 'react'
-import type { GalleryPhoto } from '../data/types'
 import { Photo } from './Photo'
 
+/** One photo in the viewer, with the words that go with it. */
+export interface Slide {
+  image: string
+  alt: string
+  caption: string
+  author: string
+  /** e.g. "2 of 5" when the memory has several photos. */
+  position?: string
+}
+
 interface LightboxProps {
-  photos: GalleryPhoto[]
-  /** Position of the photo on show, or null when the lightbox is closed. */
+  slides: Slide[]
+  /** Position of the slide on show, or null when the lightbox is closed. */
   index: number | null
   onChange: (index: number) => void
   onClose: () => void
@@ -13,9 +22,9 @@ interface LightboxProps {
 /**
  * Full-screen photo viewer built on the browser's <dialog>, which keeps
  * keyboard focus inside while open, closes on Escape, and hands focus back
- * to the thumbnail that opened it. Left and right arrow keys change photo.
+ * to the card that opened it. Left and right arrow keys change photo.
  */
-export function Lightbox({ photos, index, onChange, onClose }: LightboxProps) {
+export function Lightbox({ slides, index, onChange, onClose }: LightboxProps) {
   const dialogRef = useRef<HTMLDialogElement>(null)
   const open = index !== null
 
@@ -27,10 +36,10 @@ export function Lightbox({ photos, index, onChange, onClose }: LightboxProps) {
   }, [open])
 
   const step = (change: number) => {
-    if (index !== null) onChange((index + change + photos.length) % photos.length)
+    if (index !== null) onChange((index + change + slides.length) % slides.length)
   }
 
-  const photo = index !== null ? photos[index] : null
+  const slide = index !== null ? slides[index] : null
 
   return (
     <dialog
@@ -44,14 +53,15 @@ export function Lightbox({ photos, index, onChange, onClose }: LightboxProps) {
         if (event.key === 'ArrowRight') step(1)
       }}
     >
-      {photo && index !== null && (
+      {slide && (
         <figure className="lightbox__figure">
-          <Photo className="lightbox__photo" src={photo.image} alt={photo.alt || photo.caption} eager />
-          <figcaption>
-            <span>{photo.caption}</span>
-            <span className="lightbox__count" aria-live="polite">
-              {index + 1} / {photos.length}
-            </span>
+          <Photo className="lightbox__photo" src={slide.image} alt={slide.alt} eager />
+          <figcaption aria-live="polite">
+            {slide.caption && <p className="lightbox__caption">{slide.caption}</p>}
+            <p className="lightbox__meta">
+              <strong>– {slide.author}</strong>
+              {slide.position && <span>Photo {slide.position}</span>}
+            </p>
           </figcaption>
         </figure>
       )}

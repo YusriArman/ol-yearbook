@@ -37,6 +37,7 @@ export const sections = {
   term: {
     title: 'Our Term 24/25',
     intro: 'Meet the EXCO, BOD, and our dedicated senior members.',
+    hint: 'Click cards to see messages from each OL',
   },
   gallery: {
     title: 'Yearbook Gallery',
@@ -69,7 +70,7 @@ export const advisor: {
 } = {
   heading: 'Our Advisor',
   name: 'Ms Vithyia',
-  image: '/images/members/ms-vithyia.jpg',
+  image: '/images/msvithyia.jpg',
   greeting: 'Dear Orientation Leaders,',
   message: [
     {

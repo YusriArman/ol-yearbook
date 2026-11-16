@@ -31,15 +31,16 @@ All paths below are inside `src/terms/2425/`.
 | Titles, navigation, About text, advisor note | `data/site.ts`       |
 | Orientation Highlights                       | `data/events.ts`     |
 | EXCO, BOD departments, seniors, apprentices  | `data/members.ts`    |
-| Recap videos and gallery photos              | `data/gallery.ts`    |
+| Recap videos and gallery memories            | `data/gallery.ts`    |
 | Achievements, PMAPMs, EXCOBODs               | `data/fame.ts`       |
 | Colours, fonts, spacing                      | `styles/tokens.css`  |
 
 Components are in `components/`, one per part of the page. `Yearbook.tsx` puts them in order.
 
-## Adding photos
+## Photos
 
-Every path the 24/25 site looks for is listed in `ASSET-CHECKLIST.md`. Put each file in `public/` at that path
-(for example `public/images/members/yusri-tan.jpg`) and it replaces its placeholder automatically. No code changes needed.
+The 24/25 photos come from Yuk Guan's deployed site, resized and compressed (about 31 MB in total).
+`ASSET-CHECKLIST.md` lists every file and whether it is in place; `npm run assets` checks again.
+Anything missing shows a placeholder, and dropping the file into `public/` at the listed path fills it in.
 
-For gallery photos, also update `caption` and `alt` in `src/terms/2425/data/gallery.ts` so each photo is described.
+The recap videos are not stored here. They play from Google Drive, using the links in `src/terms/2425/data/gallery.ts`.

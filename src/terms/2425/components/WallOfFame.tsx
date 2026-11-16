@@ -75,7 +75,7 @@ export function WallOfFame() {
                       <p className="fame-card__achievement">{item.achievement}</p>
                       <p>{item.description}</p>
                       {item.link && (
-                        <a className="fame-card__more" href={item.link}>
+                        <a className="fame-card__more" href={item.link} target="_blank" rel="noreferrer">
                           See More
                         </a>
                       )}

@@ -11,7 +11,7 @@ export interface Member {
   name: string
   role?: string
   image: string
-  /** Short note shown when the card is hovered or focused. */
+  /** The member's own note, shown when their card is opened. */
   message?: string
 }
 
@@ -22,15 +22,15 @@ export interface Department {
 
 export interface MemoryVideo {
   title: string
-  poster: string
-  src: string
+  /** Google Drive preview address, shown in an embedded player. */
+  embedUrl: string
 }
 
-export interface GalleryPhoto {
-  image: string
+/** A memory shared by a member: one or more photos with their own words. */
+export interface Memory {
+  author: string
   caption: string
-  /** What the photo shows, for people who cannot see it. Leave '' until known. */
-  alt: string
+  images: string[]
 }
 
 export interface Achievement {
@@ -42,7 +42,7 @@ export interface Achievement {
   alt: string
   /** Extra words the search box should match. */
   keywords: string
-  /** Optional page to open from a “See More” button. */
+  /** Where the “See More” button goes. Leave out to hide the button. */
   link?: string
 }
 

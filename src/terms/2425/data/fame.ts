@@ -1,6 +1,6 @@
 import type { Achievement, ExcobodTerm, PmapmPeriod } from './types'
 
-// Achievements. Add an optional `link` to show a “See More” button on a card.
+// Achievements. `link` is where the “See More” button goes; leave it out to hide the button.
 export const achievements: Achievement[] = [
   {
     "name": "Phoon Yuk Guan",
@@ -9,7 +9,8 @@ export const achievements: Achievement[] = [
     "description": "Designed all the elements and assets for Celestial Orientation Party 2024.",
     "image": "/images/fame/celestialdesign.jpg",
     "alt": "Phoon Yuk Guan",
-    "keywords": "Designer of OP 2024 (Celestial)"
+    "keywords": "Designer of OP 2024 (Celestial)",
+    "link": "https://www.canva.com/design/DAG4OYDZP98/MfbOPYigOMXsZEnLP-5t4w/view?utm_content=DAG4OYDZP98&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h5caaae0a83"
   },
   {
     "name": "Victor Wong",
@@ -18,7 +19,8 @@ export const achievements: Achievement[] = [
     "description": "Built a ticketing system for OP 2024 that allowed freshmen to RSVP to the event.",
     "image": "/images/fame/celestialticketingsystem.jpg",
     "alt": "Victor Wong",
-    "keywords": "Ticketing System Developer"
+    "keywords": "Ticketing System Developer",
+    "link": "https://orientation-ticket.web.app/"
   },
   {
     "name": "Eugenie Ngu",
@@ -27,7 +29,8 @@ export const achievements: Achievement[] = [
     "description": "Celebrates the history of OL and current achievements in one publication.",
     "image": "/images/fame/bookofol.jpg",
     "alt": "Eugenie Ngu",
-    "keywords": "Book Of OL"
+    "keywords": "Book Of OL",
+    "link": "https://drive.google.com/file/d/1vNB5HJKXYa2xzQwbXbExpea0wMgYvTHs/view?usp=sharing"
   },
   {
     "name": "Yong Tung Joe & Eugenie Ngu",
@@ -43,7 +46,7 @@ export const achievements: Achievement[] = [
     "achievement": "Creator of Head, Shoulders, Knees & Ducks of Freshie Games September 2023",
     "summary": "Creator of Head, Shoulders, Knees & Ducks Game",
     "description": "Head, Shoulders, Knees & Ducks has consistently been a top freshie favourite game.",
-    "image": "/images/fame/pmapm-generic.jpg",
+    "image": "/images/fame/duck.jpg",
     "alt": "Head, Shoulders, Knees & Ducks Game",
     "keywords": "Creator of Head, Shoulders, Knees & Ducks of Freshie Games September 2023"
   },
@@ -61,7 +64,7 @@ export const achievements: Achievement[] = [
     "achievement": "Creator of Capture the Duck",
     "summary": "Creator of Capture the Duck",
     "description": "“Capture the Duck” is an activity created for freshmen and students during CNS, successfully sparking high participation and boosting social media engagement.",
-    "image": "/images/fame/pmapm-generic.jpg",
+    "image": "/images/fame/capturetheduck.jpg",
     "alt": "Capture the Duck Engagement Game",
     "keywords": "Creator of Capture the Duck Engagement Game in CNS"
   },
@@ -70,7 +73,7 @@ export const achievements: Achievement[] = [
     "achievement": "Creator of Engagement Day Circle Floor Plan",
     "summary": "Creator of Engagement Day Circle Floor Plan",
     "description": "The seating arrangement in a circle that is widely used in most of the engagement days for grouping was created in Jan 2024.",
-    "image": "/images/fame/pmapm-generic.jpg",
+    "image": "/images/fame/edfloorplan.jpg",
     "alt": "Engagement Day Circle Floor Plan",
     "keywords": "Creator of Engagement Day Circle Floor Plan"
   },
@@ -79,43 +82,45 @@ export const achievements: Achievement[] = [
     "achievement": "Designer of OP 2025 (Eclipse)",
     "summary": "Designer of OP 2025 (Eclipse)",
     "description": "Designed all the elements and assets for Eclipse Orientation Party 2025.",
-    "image": "/images/fame/pmapm-generic.jpg",
+    "image": "/images/fame/eclipse.jpg",
     "alt": "OP 2025 Eclipse Design",
-    "keywords": "Designer of OP 2025 (Eclipse)"
+    "keywords": "Designer of OP 2025 (Eclipse)",
+    "link": "https://www.canva.com/design/DAG5JeUNPVE/mOog5cHrllAVwVElf6ZBJA/view?utm_content=DAG5JeUNPVE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h055e203222"
   },
   {
     "name": "Ho Zanna",
     "achievement": "Designer of TBC Shirt 2025",
     "summary": "Designer of TBC Shirt 2025",
     "description": "Designed the T-Shirt for TBC 2025.",
-    "image": "/images/fame/pmapm-generic.jpg",
+    "image": "/images/fame/tbc2025.jpg",
     "alt": "TBC Shirt 2025",
     "keywords": "Designer of TBC Shirt 2025"
   },
   {
-    "name": "Leong Jia Hui",
-    "achievement": "Designer of TBC Shirt 2024",
-    "summary": "Designer of TBC Shirt 2024",
-    "description": "Designed the T-Shirt for TBC 2024.",
-    "image": "/images/fame/pmapm-generic.jpg",
-    "alt": "TBC Shirt 2024",
-    "keywords": "Designer of TBC Shirt 2024"
+    "name": "Lim En Yu",
+    "achievement": "Designer of CNS SEPT 2025 Card Holder",
+    "summary": "Designer of CNS SEPT 2025 Card Holder",
+    "description": "Designed the card holder for September 2025 CNS as part of the \"Capture the duck\" activity's prize.",
+    "image": "/images/fame/cnscardholder.jpg",
+    "alt": "CNS Card Holder",
+    "keywords": "Designer of CNS SEPT 2025 Card Holder"
   },
   {
     "name": "Cyndi Lee",
     "achievement": "Designer of Social Night AUG 2025 (Enchanta)",
     "summary": "Designed all the elements and assets for Social Night AUG 2025 (Enchanta)",
     "description": "Designed all the elements and assets for Social Night AUG 2025 (Enchanta).",
-    "image": "/images/fame/pmapm-generic.jpg",
+    "image": "/images/fame/enchanta.jpg",
     "alt": "Social Night AUG 2025 Enchanta Design",
-    "keywords": "Designer of Social Night AUG 2025 (Enchanta)"
+    "keywords": "Designer of Social Night AUG 2025 (Enchanta)",
+    "link": "https://drive.google.com/open?id=1A-OFJrN4dcjEajUWbk5yQtOeHntzGSwY"
   },
   {
     "name": "Ho Jia Rou",
     "achievement": "Designer of TOL Polo Shirt 24/25",
     "summary": "Designer of TOL Polo Shirt 24/25",
     "description": "Designed the Polo Shirt for Term 24/25.",
-    "image": "/images/fame/pmapm-generic.jpg",
+    "image": "/images/fame/poloshirt24:25.jpg",
     "alt": "TOL Polo Shirt 24/25",
     "keywords": "Designer of TOL Polo Shirt 24/25"
   },
@@ -124,25 +129,16 @@ export const achievements: Achievement[] = [
     "achievement": "Designer of OL Varsity Jacket",
     "summary": "Designer of OL Varsity Jacket",
     "description": "Designed the OL Varsity Jacket for 2025.",
-    "image": "/images/fame/pmapm-generic.jpg",
+    "image": "/images/fame/oljacket.jpg",
     "alt": "OL Varsity Jacket 2025",
     "keywords": "Designer of OL Varsity Jacket"
-  },
-  {
-    "name": "Lim En Yui",
-    "achievement": "Designer of TBC Shirt 2023",
-    "summary": "Designer of TBC Shirt 2023",
-    "description": "Designed the T-Shirt for TBC 2023.",
-    "image": "/images/fame/pmapm-generic.jpg",
-    "alt": "TBC Shirt 2023",
-    "keywords": "Designer of TBC Shirt 2023"
   },
   {
     "name": "Nurul Natasya",
     "achievement": "The OL Met Gala Appreciation Dinner Mug Designer",
     "summary": "The OL Met Gala Appreciation Dinner Mug Designer",
     "description": "Designed the mug that was given to Orientation Leaders during the Appreciation Dinner.",
-    "image": "/images/fame/pmapm-generic.jpg",
+    "image": "/images/fame/olmug.jpg",
     "alt": "OL Met Gala Appreciation Dinner Mug",
     "keywords": "The OL Met Gala Appreciation Dinner Mug Designer"
   },
@@ -151,29 +147,15 @@ export const achievements: Achievement[] = [
     "achievement": "TOL 24/25 Yearbook Website",
     "summary": "TOL 24/25 Yearbook Website",
     "description": "Developed and designed the yearbook website entirely from scratch.",
-    "image": "/images/fame/pmapm-generic.jpg",
+    "image": "/images/fame/yearbook.jpg",
     "alt": "TOL 24/25 Yearbook Website",
-    "keywords": "TOL 24/25 Yearbook Website"
+    "keywords": "TOL 24/25 Yearbook Website",
+    "link": "https://olyearbook24r25-yukguan.netlify.app"
   }
 ]
 
 // PMAPMs by month, newest first.
 export const pmapm: PmapmPeriod[] = [
-  {
-    "period": "DEC 2025",
-    "events": [
-      {
-        "title": "OL Retreat",
-        "people": [
-          "Lai Wei Qi",
-          "Hing Hai Yun",
-          "Jacqueline Lo Jia En",
-          "Joanne Phang Zi Xuan",
-          "Pelicia Tang Ying Jing"
-        ]
-      }
-    ]
-  },
   {
     "period": "NOV 2025",
     "events": [
@@ -198,7 +180,7 @@ export const pmapm: PmapmPeriod[] = [
           "Chryseis Ng Ke Sin",
           "Elvina Laurencia Ryanto",
           "Jacqueline Lo Jia En",
-          "Rianna Tseu Lar Yon"
+          "Rianna Tseu Kar Yin"
         ]
       }
     ]

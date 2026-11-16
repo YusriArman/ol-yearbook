@@ -3,18 +3,16 @@ import { Photo } from './Photo'
 
 interface MemberCardProps {
   member: Member
-  /** Fallback note for members without one of their own. */
-  message?: string
   /** 'large' for EXCO and BOD, 'small' for seniors and apprentices. */
   size?: 'large' | 'small'
+  /** Called when the card is chosen, so the parent can show the member's message. */
+  onOpen: (member: Member) => void
 }
 
-/** A portrait card. Its note appears on hover, and on keyboard focus or tap. */
-export function MemberCard({ member, message, size = 'large' }: MemberCardProps) {
-  const note = member.message ?? message
-
-  return (
-    <li className={`card member-card member-card--${size}`} tabIndex={note ? 0 : undefined}>
+/** A portrait card. Members with a message are buttons that open it. */
+export function MemberCard({ member, size = 'large', onOpen }: MemberCardProps) {
+  const content = (
+    <>
       <Photo
         className="member-card__avatar"
         variant="portrait"
@@ -22,9 +20,21 @@ export function MemberCard({ member, message, size = 'large' }: MemberCardProps)
         alt={`Portrait of ${member.name}`}
         name={member.name}
       />
-      <h4 className="member-card__name">{member.name}</h4>
-      {member.role && <p className="member-card__role">{member.role}</p>}
-      {note && <p className="member-card__note">“{note}”</p>}
+      <span className="member-card__name">{member.name}</span>
+      {member.role && <span className="member-card__role">{member.role}</span>}
+    </>
+  )
+
+  return (
+    <li className={`member-item member-item--${size}`}>
+      {member.message ? (
+        <button type="button" className="card member-card" onClick={() => onOpen(member)}>
+          {content}
+          <span className="visually-hidden"> — read message</span>
+        </button>
+      ) : (
+        <div className="card member-card">{content}</div>
+      )}
     </li>
   )
 }
